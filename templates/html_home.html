@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "style.css" %}">
+    <title>Todo home</title>
+</head>
+<body>
+   
+    <marquee class="heading" ><b><h1>WELCOME TO TODO LIST</h1></b></marquee>
+    <div class="box_heading">
+    <div class = "heading_2">
+
+    {% comment %} <h2>LIST</h2> {% endcomment %}
+    </div>
+
+    <form  action = "adding" method = "POST">{% csrf_token %}
+        <input type="text" class="name" name="name" placeholder="Enter your Name">
+        <input class = "password" name = "password" type = "password" placeholder = "Enter the password here">
+        <input type="text" class="todo" name="todo" placeholder="what to do">
+
+        <button type = "submit" class="add" onclick = "myFunctions()">ADD THE TASK</button>
+
+        <script>
+            function myFunctions() {
+              alert("Successful Added in the list");
+            }
+        </script>
+        <a href = "return_list" class = "hypertext">To check your list </a>  <a href = "signup" class = "hypertext2">SIGN UP</a>
+    </form>
+    </div>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html> -->
