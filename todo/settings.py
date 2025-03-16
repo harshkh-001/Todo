@@ -120,7 +120,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # This is where Django will
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/statics/'
 
 # added manually
 
