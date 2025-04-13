@@ -1,6 +1,8 @@
 # todo_list
 Todo list project
 
+🔗 **Live Demo:** [https://todo-kkim.onrender.com/](https://todo-kkim.onrender.com/)
+
 ### How to open 
 - Open integrated terminal in todo main folder
 - Type "pip install django" if not installed 
